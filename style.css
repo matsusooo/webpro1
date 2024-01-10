@@ -1,0 +1,213 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, form {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('images/bbb.jpg'); /* 背景画像を設定 */
+    background-size: cover; /* 画面に合わせて背景画像を調整 */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* スクロールしても背景画像が固定される */
+    background-color: #f7f7f7;
+    line-height: 1.6;
+}
+
+header {
+    background-color: aqua;
+    color: #333;
+    text-align: center;
+    padding: 40px 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold; /* フォントを太字に */
+}
+
+h1 {
+    font-size: 36px;
+    font-family: 'Dancing Script', cursive; /* 華やかなフォントに変更 */
+    color: violet; /* タイトルの文字色を変更 */
+}
+
+/* プチギフトの写真を小さくし、横一列に並べるスタイル */
+.gift-info {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #fff;
+    padding: 40px 0;
+    
+    display: flex;
+    flex-wrap: nowrap; /* 横一列に並べるためにnowrapを設定 */
+    overflow-x: auto; /* もし画面幅を超える場合、横スクロール可能にする */
+}
+
+.gift-item {
+    background-color: #fff;
+    border-radius: 10px; /* 角を丸くする */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 影を追加 */
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    flex: 0 0 auto; /* サイズが自動調整されるようにする */
+    width: 200px; /* 1つのアイテムの幅を設定 */
+}
+
+.gift-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* 画像にも角を丸くする */
+}
+
+/* ギフトアイテムの間隔を調整 */
+.gift-item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.caple {
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+    background-image: url('images/flowers.jpg'); /* 華やかな背景画像を設定 */
+    background-size: cover; /* 画面に合わせて背景画像を調整 */
+}
+
+.about-us {
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+    background-image: url('images/flowers.jpg'); /* 華やかな背景画像を設定 */
+    background-size: cover; /* 画面に合わせて背景画像を調整 */
+}
+
+.contact {
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+    background-image: url('images/flowers.jpg'); /* 華やかな背景画像を設定 */
+    background-size: cover; /* 画面に合わせて背景画像を調整 */
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: violet; /* ラベルの文字色を変更 */
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button[type="submit"] {
+    background-color: violet; /* 送信ボタンの背景色を変更 */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: aqua;
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Wedding-themed styles */
+header h1 {
+    background-color: transparent; /* タイトルの背景色を透明にする */
+    font-family: 'Dancing Script', cursive;
+    font-size: 48px;
+    color: violet; /* タイトルの文字色を変更 */
+}
+
+.header p {
+    font-size: 18px;
+    color: violet; /* ヘッダーのテキスト色を変更 */
+}
+
+.gift-info {
+    background-color: transparent; /* プチギフトセクションの背景色を透明にする */
+    padding: 40px 0;
+}
+
+.gift-item h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    color:#333; /* ギフトアイテムのタイトルの文字色を変更 */
+}
+
+.about-us h2,
+.contact h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 36px;
+    color: violet; /* セクションのタイトルの文字色を変更 */
+}
+
+/* 商品一覧のスタイル */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.product-item {
+    background-color: #fff;
+    border-radius: 10px; /* 角を丸くする */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 影を追加 */
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    width: 200px;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* 画像にも角を丸くする */
+}
+
+.buy-button {
+    background-color: violet; /* 購入ボタンの背景色を変更 */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* 商品一覧のボタンのスタイル */
+.buy-button:hover {
+    background-color: #555;
+}
+
+.buy-button:focus {
+    outline: none;
+}
+
